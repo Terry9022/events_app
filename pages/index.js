@@ -5,7 +5,7 @@ import styles from "@/styles/Home.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default function Home({ data }) {
   return (
     <>
       <Head>
@@ -14,19 +14,36 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <header>
+        <nav>
+          <img />
+          <a href="/">Home</a>
+          <a href="/events">Events</a>
+          <a href="about-us">About Us</a>
+        </nav>
+      </header>
       <main className={`${styles.main} ${inter.className}`}>
-        <header>
-          <nav>
-            <img />
-            <a href="/">Home</a>
-            <a href="/events">Events</a>
-            <a href="about-us">About Us</a>
-          </nav>
-        </header>
+        {data.map((ev) => (
+          <a key={ev.id} href={`/events/${ev.id}`}>
+            <Image src={ev.image} alt={ev.title} width={300} height={300} />
+            <h2>{ev.title}</h2>
+            <p>{ev.description}</p>
+          </a>
+        ))}
       </main>
       <footer className={styles.footer}>
         <p>Copyright © 2023 Events App</p>
       </footer>
     </>
   );
+}
+
+export async function getServerSideProps() {
+  const { events_categories } = await import("/data/data.json");
+
+  return {
+    props: {
+      data: events_categories,
+    },
+  };
 }
