@@ -17,6 +17,42 @@ const AboutUsPage = () => {
         quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
         voluptas nulla pariatur
       </p>
+      <h2>oris suscipit lab</h2>
+      <p>
+        t fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
+        sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+        sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
+        tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+        Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+        suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
+        autem vel eum i
+      </p>
+      <ul className="about_us_list">
+        <li>
+          <h3>oris suscipit lab</h3>
+          <p>
+            t fugit, sed quia consequuntur magni dolores eos qui ratione
+            voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+            ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+            numquam eius modi tempora incidunt ut labore et dolore magnam
+            aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
+            exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid
+            ex ea commodi consequatur? Quis autem vel eum i
+          </p>
+        </li>
+        <li>
+          <h3>dasdsaddsx</h3>
+          <p>
+            t fugit, sed quia consequuntur magni dolores eos qui ratione
+            voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+            ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+            numquam eius modi tempora incidunt ut labore et dolore magnam
+            aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
+            exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid
+            ex ea commodi consequatur? Quis autem vel eum i
+          </p>
+        </li>
+      </ul>
     </div>
   );
 };
