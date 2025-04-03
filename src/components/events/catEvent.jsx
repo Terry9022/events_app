@@ -5,7 +5,7 @@ const CatEvent = ({ data, pageName }) => {
   return (
     <div className="cat_event">
       <h1>Events in {pageName}</h1>
-      <div class="content">
+      <div className="content">
         {data.map((ev) => (
           <Link
             className="card"
